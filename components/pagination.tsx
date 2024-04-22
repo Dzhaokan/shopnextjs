@@ -18,6 +18,7 @@ const NumberItem: React.FC<NumberItemProps> = ({
         isActive ? "text-white bg-zinc-900" : "bg-stone-50"
       }`}
       onClick={onClick}
+      aria-selected={isActive ? "true" : "false"}
     >
       {number}
     </button>
